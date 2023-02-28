@@ -27,12 +27,12 @@ namespace _02_27
 
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show($"The description is: {DescriptionText.Text}");
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-
+            First.IsChecked = Second.IsChecked = Third.IsChecked = Fourth.IsChecked = false;
         }
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
