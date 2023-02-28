@@ -14,11 +14,11 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="ApplyButton" Content="Apply"
+                <Button x:Name="ApplyButton" Click="ApplyButton_Click" Content="Apply"
                     Grid.Column="0" Margin="0 0 10 0" />
-                <Button x:Name="ResetButton" Content="Reset"
+                <Button x:Name="ResetButton" Click="ResetButton_Click" Content="Reset"
                     Grid.Column="1"/>
-                <Button x:Name="RefreshButton" Content="Refresh"
+                <Button x:Name="RefreshButton" Click="RefreshButton_Click" Content="Refresh"
                     Grid.Column="2" Margin="10 0 0 0" />
             </Grid>
             <TextBlock Text="Description"/>
