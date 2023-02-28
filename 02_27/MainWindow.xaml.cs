@@ -39,5 +39,16 @@ namespace _02_27
         {
 
         }
+        private void Checkbox_Checked(object sender, RoutedEventArgs e)
+        { 
+            DescriptionText.Text = (string)((CheckBox)sender).Content;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var combo = (ComboBox)sender;
+            var value = (ComboBoxItem)combo.SelectedValue;
+            DescriptionText.Text = (string)value.Content;
+        }
     }
 }

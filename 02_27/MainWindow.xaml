@@ -41,7 +41,7 @@
                 </StackPanel>
             </Grid>
             <TextBlock Text="Material"/>
-            <ComboBox Padding="5" SelectedIndex="0">
+            <ComboBox Padding="5" SelectionChanged="ComboBox_SelectionChanged">
                 <ComboBoxItem>Metal</ComboBoxItem>
                 <ComboBoxItem>Plastic</ComboBoxItem>
             </ComboBox>
@@ -51,12 +51,12 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                    <CheckBox x:Name="First" Content="First"/>
-                    <CheckBox x:Name="Second" Content="Second"/>
+                    <CheckBox Checked ="Checkbox_Checked" x:Name="First" Content="First"/>
+                    <CheckBox Checked ="Checkbox_Checked" x:Name="Second" Content="Second"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
-                    <CheckBox x:Name="Third" Content="Third"/>
-                    <CheckBox x:Name="Fourth" Content="Fourth"/>
+                    <CheckBox Checked ="Checkbox_Checked" x:Name="Third" Content="Third"/>
+                    <CheckBox Checked ="Checkbox_Checked" x:Name="Fourth" Content="Fourth"/>
                 </StackPanel>
             </Grid>
             
