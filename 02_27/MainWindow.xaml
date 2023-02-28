@@ -41,8 +41,25 @@
                 </StackPanel>
             </Grid>
             <TextBlock Text="Material"/>
-            <ComboBox Padding="5"/>
-
+            <ComboBox Padding="5" SelectedIndex="0">
+                <ComboBoxItem>Metal</ComboBoxItem>
+                <ComboBoxItem>Plastic</ComboBoxItem>
+            </ComboBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox x:Name="First" Content="First"/>
+                    <CheckBox x:Name="Second" Content="Second"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <CheckBox x:Name="Third" Content="Third"/>
+                    <CheckBox x:Name="Fourth" Content="Fourth"/>
+                </StackPanel>
+            </Grid>
+            
         </StackPanel>
     </Border>
 </Window>
